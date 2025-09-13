@@ -1,0 +1,27 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    restart: unless-stopped
+    
+  portfolio-dev:
+    build:
+      context: .
+      target: builder
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    command: npm run dev -- --host 0.0.0.0
+    profiles:
+      - dev
