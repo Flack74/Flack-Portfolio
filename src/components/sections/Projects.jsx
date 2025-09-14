@@ -25,7 +25,7 @@ const ProjectCard = ({ project, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card className="p-6 h-full flex flex-col">
+      <Card className="p-6 flex flex-col" style={{ height: 'fit-content' }}>
         {/* Project Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center">
@@ -170,7 +170,7 @@ const Projects = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={filter}
-              className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
+              className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
