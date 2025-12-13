@@ -25,7 +25,7 @@ const About = () => {
               <span className="gradient-text">Me</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4">
-              Passionate about building scalable infrastructure and automating complex systems
+              Building high-performance backend systems with modern DevOps practices
             </p>
           </motion.div>
 
@@ -37,14 +37,14 @@ const About = () => {
                   My Journey
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  I'm a passionate DevOps engineer and cloud enthusiast with a strong foundation in backend development. 
-                  My journey began with a curiosity about how systems work at scale, which led me to dive deep into 
-                  cloud technologies, infrastructure automation, and modern DevOps practices.
+                  I'm a passionate backend developer with expertise in DevOps practices. My journey began with building 
+                  high-performance APIs and microservices, which naturally led me to embrace infrastructure automation, 
+                  containerization, and cloud-native deployment strategies.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  I specialize in building robust, scalable systems using cutting-edge technologies like Go, AWS, 
-                  Docker, and Kubernetes. My approach combines technical excellence with a focus on automation, 
-                  security, and performance optimization.
+                  I specialize in Go and Django for backend development, leveraging DevOps practices like Docker, 
+                  Kubernetes, and CI/CD pipelines to deliver production-ready systems. My approach focuses on building 
+                  scalable APIs, optimizing database performance, and ensuring reliable deployments.
                 </p>
                 
                 {/* Quick Stats */}

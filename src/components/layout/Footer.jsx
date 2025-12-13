@@ -31,8 +31,8 @@ const Footer = () => {
                 Puspendra Chawla
               </motion.div>
               <p className="text-gray-400 mb-4">
-                DevOps & Cloud Enthusiast passionate about building scalable infrastructure 
-                and automating complex systems.
+                Backend Developer & DevOps Engineer specializing in Go and Django. 
+                Building high-performance APIs and scalable backend systems.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (

@@ -11,13 +11,6 @@ export const personalInfo = {
 };
 
 export const skills = {
-  "Backend Technologies": [
-    { name: "Go (Golang)", level: 90, icon: "🐹" },
-    { name: "Python/Django", level: 85, icon: "🐍" },
-    { name: "REST APIs", level: 90, icon: "🔗" },
-    { name: "Microservices", level: 85, icon: "🏗️" },
-    { name: "WebSockets", level: 80, icon: "⚡" }
-  ],
   "Programming Languages": [
     { name: "Go", level: 90, icon: "🐹" },
     { name: "Python", level: 85, icon: "🐍" },
