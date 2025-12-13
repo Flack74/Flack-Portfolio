@@ -5,18 +5,25 @@ export const personalInfo = {
   location: "Rajasthan, India",
   github: "https://github.com/Flack74",
   linkedin: "https://linkedin.com/in/puspendra-chawla",
-  role: "DevOps & Cloud Enthusiast",
-  tagline: "Building scalable cloud infrastructure and automating the future",
-  bio: "Passionate DevOps engineer with curiosity in cloud technologies, infrastructure automation, and backend development. I specialize in building robust, scalable systems using modern DevOps practices and cloud-native technologies."
+  role: "Backend Developer & DevOps Engineer",
+  tagline: "Building high-performance backend systems with Go and scalable cloud infrastructure",
+  bio: "Passionate backend developer specializing in Go and Django, with expertise in building production-ready APIs, microservices, and cloud-native applications. I focus on creating robust, scalable backend systems with modern DevOps practices and infrastructure automation."
 };
 
 export const skills = {
+  "Backend Technologies": [
+    { name: "Go (Golang)", level: 90, icon: "🐹" },
+    { name: "Python/Django", level: 85, icon: "🐍" },
+    { name: "REST APIs", level: 90, icon: "🔗" },
+    { name: "Microservices", level: 85, icon: "🏗️" },
+    { name: "WebSockets", level: 80, icon: "⚡" }
+  ],
   "Programming Languages": [
-    { name: "Go", level: 80, icon: "🐹" },
-    { name: "Python", level: 75, icon: "🐍" },
-    { name: "JavaScript", level: 60, icon: "⚡" },
+    { name: "Go", level: 90, icon: "🐹" },
+    { name: "Python", level: 85, icon: "🐍" },
+    { name: "JavaScript", level: 70, icon: "⚡" },
     { name: "Bash", level: 85, icon: "💻" },
-    { name: "C/C++", level: 65, icon: "⚙️" }
+    { name: "SQL", level: 80, icon: "🗃️" }
   ],
   "Cloud Services": [
     { name: "AWS Lambda", level: 85, icon: "⚡" },
@@ -39,16 +46,97 @@ export const skills = {
     { name: "Prometheus", level: 65, icon: "📊" },
     { name: "Grafana", level: 65, icon: "📈" }
   ],
-  "Databases": [
-    { name: "MongoDB", level: 80, icon: "🍃" },
-    { name: "PostgreSQL", level: 85, icon: "🐘" },
-    { name: "Redis", level: 75, icon: "🔴" },
-    { name: "MySQL", level: 70, icon: "🗃️" },
+  "Databases & Caching": [
+    { name: "PostgreSQL", level: 90, icon: "🐘" },
+    { name: "MongoDB", level: 85, icon: "🍃" },
+    { name: "Redis", level: 85, icon: "🔴" },
+    { name: "MySQL", level: 75, icon: "🗃️" },
     { name: "SQLite", level: 80, icon: "💾" }
+  ],
+  "Backend Frameworks": [
+    { name: "Gin (Go)", level: 90, icon: "🚀" },
+    { name: "Fiber (Go)", level: 85, icon: "⚡" },
+    { name: "Django", level: 85, icon: "🎯" },
+    { name: "Flask", level: 80, icon: "🌶️" },
+    { name: "Echo (Go)", level: 75, icon: "📡" }
   ]
 };
 
 export const projects = [
+  {
+    id: 'delivery-management-system',
+    title: 'Delivery Management System',
+    description: 'Production-ready backend system for real-time delivery tracking and automated order lifecycle management.',
+    longDescription: 'A high-performance, enterprise-grade delivery management backend built with Go, featuring real-time tracking using Redis Pub/Sub, automated status progression with worker pools, secure JWT authentication, and optimized concurrency. Designed using clean architecture principles with Docker-based production deployment and comprehensive testing.',
+    technologies: [
+      'Go',
+      'Gin',
+      'PostgreSQL',
+      'Redis',
+      'Docker',
+      'JWT',
+      'Worker Pools',
+      'Clean Architecture'
+    ],
+    features: [
+      'Real-time order status updates via Redis Pub/Sub',
+      'Concurrent processing with 10-worker pool',
+      'JWT authentication with role-based access control',
+      'Automated order lifecycle transitions',
+      'Rate limiting, CSRF, and security hardening',
+      'Database pooling and performance optimization',
+      'Structured logging and health monitoring',
+      'Comprehensive test suite with 29+ test modes'
+    ],
+    deployment: 'Docker Compose, multi-stage builds, production health checks',
+    githubUrl: 'https://github.com/Flack74/Delivery-Management-System',
+    liveUrl: '#',
+    image: '/projects/delivery.jpg',
+    category: 'Backend/DevOps',
+    highlights: [
+      '1000+ requests/second throughput',
+      '<100ms average response time',
+      'Real-time Redis-based event broadcasting',
+      'Enterprise-level authentication and security'
+    ]
+  },
+  {
+    id: 'briworld',
+    title: 'BriWorld',
+    description: 'Real-time multiplayer geography quiz game with WebSocket-powered gameplay.',
+    longDescription: 'BriWorld is a real-time multiplayer geography quiz game built using Go, WebSockets, and Neon PostgreSQL. It supports up to 6 players per room, live leaderboards, fuzzy answer matching, JWT authentication, and a fully responsive frontend. Designed with modern web standards and deployed on Render with Docker-based production setup.',
+    technologies: [
+      'Go',
+      'Fiber',
+      'WebSocket',
+      'Neon PostgreSQL',
+      'Vanilla JavaScript',
+      'Docker',
+      'JWT',
+      'Fuzzy Matching'
+    ],
+    features: [
+      'Real-time multiplayer gameplay',
+      '170+ country flag questions',
+      'Live leaderboards and scoring',
+      'Fuzzy answer matching using Levenshtein distance',
+      'In-game chat functionality',
+      'Countdown timer synchronization',
+      'Dark mode UI',
+      'Responsive layout across devices'
+    ],
+    deployment: 'Docker + Render (Neon PostgreSQL for production)',
+    githubUrl: 'https://github.com/Flack74/BriWorld',
+    liveUrl: 'https://your-render-url.onrender.com',
+    image: '/projects/briworld.jpg',
+    category: 'Full-Stack/Game',
+    highlights: [
+      'WebSocket real-time communication',
+      'Serverless Neon PostgreSQL database',
+      'Custom game engine with concurrent rooms',
+      'Fully responsive modern UI with dark mode'
+    ]
+  },
   {
     id: 'auth-system',
     title: 'Authentication System',
@@ -263,15 +351,16 @@ export const projects = [
 
 export const experience = [
   {
-    title: "DevOps & Cloud Enthusiast",
+    title: "Backend Developer & DevOps Engineer",
     company: "Self-Learning & Projects",
     period: "2023 - Present",
-    description: "Building and deploying cloud-native applications with focus on automation, scalability, and security.",
+    description: "Developing high-performance backend systems with Go and Django, focusing on scalable APIs, microservices, and cloud infrastructure automation.",
     achievements: [
-      "Deployed 10+ production applications on AWS",
-      "Implemented CI/CD pipelines reducing deployment time by 80%",
-      "Built infrastructure as code using Terraform",
-      "Achieved 99.9% uptime for critical applications"
+      "Built 15+ production-ready backend APIs with Go and Django",
+      "Achieved 1000+ requests/second throughput with <100ms response times",
+      "Implemented real-time systems using WebSockets and Redis Pub/Sub",
+      "Deployed scalable microservices on AWS with 99.9% uptime",
+      "Automated CI/CD pipelines reducing deployment time by 80%"
     ]
   }
 ];
