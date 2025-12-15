@@ -120,7 +120,7 @@ export const projects = [
     ],
     deployment: 'Docker + Render (Neon PostgreSQL for production)',
     githubUrl: 'https://github.com/Flack74/BriWorld',
-    liveUrl: 'https://your-render-url.onrender.com',
+    liveUrl: 'https://briworld.onrender.com/',
     image: '/projects/briworld.jpg',
     category: 'Full-Stack/Game',
     highlights: [
