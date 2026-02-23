@@ -56,6 +56,45 @@ export const skills = {
 };
 
 export const projects = [
+
+  {
+  "id": "webhook-delivery-platform",
+  "title": "Webhook Delivery Platform",
+  "description": "Production-grade webhook infrastructure for reliable asynchronous event delivery with durable queues and worker-based concurrency.",
+  "longDescription": "A reliability-focused webhook delivery platform built in Go, inspired by systems like Stripe and Svix. The system ingests events via REST APIs, persists them in PostgreSQL (JSONB), and processes deliveries asynchronously using a durable Redis queue (BRPOPLPUSH) with worker pools. Designed with fault-tolerant architecture, crash recovery, and decoupled ingestion/delivery pipelines to ensure high throughput and resilient webhook dispatch.",
+  "technologies": [
+    "Go",
+    "Gin",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "Goroutines",
+    "Worker Pools",
+    "Event-Driven Architecture"
+  ],
+  "features": [
+    "Asynchronous webhook event ingestion via REST API",
+    "Durable Redis queue using BRPOPLPUSH for crash-safe job processing",
+    "Concurrent delivery workers using goroutines",
+    "Automatic recovery of in-flight jobs on system restart",
+    "Immutable event storage using PostgreSQL JSONB",
+    "Delivery tracking with status, attempts, and retry metadata",
+    "Decoupled ingestion and delivery pipeline for fault isolation",
+    "Health checks and environment-based configuration"
+  ],
+  "deployment": "Docker Compose with PostgreSQL and Redis, health checks, reproducible local environment",
+  "githubUrl": "https://github.com/Flack74/Webhook-Delivery-Platform",
+  "liveUrl": "#",
+  "image": "/projects/webhook.jpg",
+  "category": "Backend/Distributed Systems",
+  "highlights": [
+    "Reliable queue architecture with BRPOPLPUSH and AOF persistence",
+    "Concurrent worker pool for parallel webhook dispatch",
+    "Crash recovery and at-least-once delivery design",
+    "Decoupled async pipeline improving throughput and fault tolerance"
+  ]
+  },
+  
   {
     id: 'delivery-management-system',
     title: 'Delivery Management System',
